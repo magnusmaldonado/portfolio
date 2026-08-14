@@ -18,7 +18,7 @@ html {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background: #f0f4fb;
+  background:linear-gradient(to bottom, #021b24 0%, #045159 100%);
   font-size: 16px;
   letter-spacing: 0.4px;
 }
@@ -27,19 +27,26 @@ html {
   scroll-behavior: smooth;
 }
 
+.testing {
+  border-style: solid;
+  border-color: #dceeff;
+}
+
 header {
   position: fixed;
-  background-color: #f0f4fb;
+  background-color: #071A26;
   top: 0;
   left: 0;
   width: 100%;
-  margin: 0;
-  padding: 2% 0;
+  min-height: 90px;
+  padding: 14px 20px;
+  align-items: center;
+  justify-content: space-between;
   z-index: 100;
 }
 
 nav {
-  justify-content: end;
+  
 }
 
 nav ul {
@@ -63,7 +70,8 @@ main {
 
 a {
   text-decoration: none;
-  color: #252b3a;
+  color: #2B8C83;
+  font: bold;
 }
 
 form {
@@ -104,6 +112,10 @@ textarea {
   color: #fff;
 }
 
+.brand {
+  align-items: center;
+}
+
 .border {
   border: 1px solid red;
 }
@@ -113,12 +125,35 @@ textarea {
 }
 
 .logo {
-  height: 30px;
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  margin-right: 12px;
 }
 
 .logo-container {
   align-items: center;
   margin-left: 3%;
+}
+
+.name-container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name-container h2 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.name-container p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  line-height: 15px;
+  color: #fff;
 }
 
 .full-name-logo {
@@ -136,9 +171,10 @@ textarea {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #252b3a;
+  background-color: #2B8C83;
 }
 .hamburger {
+  align-self: center;
   left: 85%;
   position: fixed;
   cursor: pointer;
@@ -155,8 +191,8 @@ textarea {
 .mobile-menu {
   position: absolute;
   left: -100%;
-  top: 44px;
-  background-color: #fff;
+  top: 50px;
+  background-color: #071A26;
   transition: 0.3s;
   z-index: 1000 !important;
 }
@@ -170,6 +206,7 @@ textarea {
 }
 .mobile-menu li {
   margin: 16px 0;
+  font-weight: bold;
 }
 .mobile-menu.active {
   left: 0;
@@ -178,13 +215,14 @@ textarea {
 .all-btns {
   padding: 10px 24px;
   border-radius: 500px;
-  background-color: #714aff;
+  background-color: #034550;
   color: #fff;
   font-size: 14px;
   line-height: 20px;
   border: none;
   letter-spacing: 0.5px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .dots-container {
