@@ -470,6 +470,16 @@ textarea {
   color: #20b6aa;
 }
 
+/* MOBILE SERVICE STACK */
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  width: 100%;
+}
+
 /* SERVICES CONTAINER */
 
 .services-container {
@@ -487,18 +497,11 @@ textarea {
   display: flex;
   align-items: flex-start;
   gap: 18px;
-
   width: 100%;
-
-  margin: 0;
   padding: 24px 20px;
-
   background: #ffffff;
   border-radius: 18px;
-
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-
-  text-align: left;
 }
 
 /* SERVICE ICON */
@@ -509,20 +512,17 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 72px;
   height: 72px;
-
   padding: 14px;
-
   background: #e8f1f1;
   border-radius: 50%;
 }
 
 .service-icon img {
+  display: block;
   width: 100%;
   height: 100%;
-
   object-fit: contain;
 }
 
@@ -534,9 +534,7 @@ textarea {
 
 .service-content h3 {
   margin: 0;
-
   color: #071a26;
-
   font-family: "Raleway", sans-serif;
   font-size: 21px;
   line-height: 1.2;
@@ -548,9 +546,7 @@ textarea {
 .service-line {
   width: 42px;
   height: 3px;
-
   margin: 10px 0 14px;
-
   background: #20b6aa;
   border-radius: 3px;
 }
@@ -559,9 +555,7 @@ textarea {
 
 .service-content p {
   margin: 0;
-
   color: #263844;
-
   font-size: 14px;
   line-height: 1.6;
 }
@@ -818,6 +812,7 @@ textarea {
   textarea {
     height: 150px;
   }
+
   .logo {
     height: 55px;
   }
@@ -843,14 +838,17 @@ textarea {
     font-size: 20px;
   }
 
+  .services-section {
+    padding: 60px 30px;
+  }
+
   .services-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
   }
   .service-box {
-    width: 48%;
-    margin: 0 1% 5%;
+    margin: 0;
   }
   .section-container {
     flex-direction: row;
@@ -877,13 +875,13 @@ textarea {
     height: 75vh;
   }
 
-  #services,
   #work,
   #about,
   #contact {
     height: 100vh;
     justify-content: center;
   }
+
   #work {
     padding-top: 2%;
   }
@@ -935,10 +933,118 @@ textarea {
     font-size: 14px;
   }
 
-  .service-box {
-    width: 21%;
-    margin: 0 1.5%;
-  }
+  .services-section {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 12px;
+  align-items: center;
+  width: calc(100% - 40px);
+  max-width: 1260px;
+  margin: 12px auto;
+  padding: 18px 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Desktop only needs the simple Services heading */
+
+.services-section .section-heading {
+  margin: 0;
+  padding-right: 16px;
+}
+
+.services-section .section-eyebrow {
+  margin: 0;
+
+  color: #071a26;
+
+  font-size: 22px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.services-section .section-eyebrow::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-top: 8px;
+  background: #20b6aa;
+  border-radius: 3px;
+}
+
+/* Hide mobile-style heading */
+
+.services-section .section-heading h2 {
+  display: none;
+}
+
+/* SERVICES ACROSS ONE ROW */
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+
+  width: 100%;
+}
+
+/* COMPACT DESKTOP ITEM */
+
+.service-box {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 12px;
+
+  width: 100%;
+  margin: 0;
+  padding: 4px 18px;
+
+  background: transparent;
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+/* SEPARATORS */
+
+.service-box:not(:last-child) {
+  border-right: 1px solid #d9e2e5;
+}
+
+/* SMALLER ICON */
+
+.service-icon {
+  width: 54px;
+  height: 54px;
+  padding: 10px;
+
+  flex-basis: 54px;
+}
+
+/* SMALLER COPY */
+
+.service-content h3 {
+  font-size: 14px;
+  line-height: 1.25;
+  color: #075765;
+}
+
+.service-line {
+  display: none;
+}
+
+.service-content p {
+  margin-top: 5px;
+
+  font-size: 11px;
+  line-height: 1.45;
+
+  color: #263844;
+}
+
+ 
   .section-container {
     height: 77vh;
   }
@@ -973,15 +1079,14 @@ textarea {
   .about-text-container p {
     font-size: 16px;
   }
-  #services,
+
   #work,
   #about,
   #contact {
     padding: 60px 0;
   }
 
-  #work h2,
-  #services h2 {
+  #work h2 {
     margin-top: 4%;
   }
   #about h2 {
