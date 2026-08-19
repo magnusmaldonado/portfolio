@@ -560,7 +560,88 @@ textarea {
   line-height: 1.6;
 }
 
+/* WORK
+   ========================================================================== */
 
+.work-section {
+  width: 100%;
+  padding: 55px 16px 40px;
+}
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+/* INDIVIDUAL WORK CARD */
+
+.work-card {
+  width: 100%;
+  padding: 24px 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.work-content {
+  width: 100%;
+}
+
+/* CATEGORY */
+
+.work-category {
+  margin: 0 0 8px;
+  color: #20b6aa;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+/* TITLE */
+
+.work-content h3 {
+  margin: 0;
+  color: #071a26;
+  font-family: "Raleway", sans-serif;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.work-line {
+  width: 42px;
+  height: 3px;
+  margin: 10px 0 14px;
+  background: #20b6aa;
+  border-radius: 3px;
+}
+
+/* SUMMARY */
+
+.work-summary {
+  margin: 0;
+  color: #263844;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* LINK */
+
+.work-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #2b8c83;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.work-link:hover {
+  color: #20b6aa;
+}
 
 
 
@@ -773,10 +854,6 @@ textarea {
   margin-top: 12%;
 }
 
-#work {
-  margin-bottom: 40px;
-}
-
 #about {
   flex-direction: row;
 }
@@ -792,7 +869,6 @@ textarea {
   padding-top: 13%;
 }
 
-#work,
 #about,
 #contact {
   height: 100%;
@@ -854,6 +930,24 @@ textarea {
     flex-direction: row;
     padding: 0 2%;
   }
+
+  .work-section {
+  padding: 60px 30px;
+  }
+
+  .work-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .work-card {
+    margin: 0;
+  }
+
+
+
+
   .work-img-container {
     width: 48%;
     margin: 0 0 3%;
@@ -875,16 +969,12 @@ textarea {
     height: 75vh;
   }
 
-  #work,
   #about,
   #contact {
     height: 100vh;
     justify-content: center;
   }
 
-  #work {
-    padding-top: 2%;
-  }
   #about h2 {
     margin-top: 17%;
   }
@@ -956,9 +1046,7 @@ textarea {
 
 .services-section .section-eyebrow {
   margin: 0;
-
   color: #071a26;
-
   font-size: 22px;
   letter-spacing: 0;
   text-transform: none;
@@ -986,7 +1074,6 @@ textarea {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
-
   width: 100%;
 }
 
@@ -996,14 +1083,11 @@ textarea {
   display: grid;
   grid-template-columns: 58px 1fr;
   gap: 12px;
-
   width: 100%;
   margin: 0;
   padding: 4px 18px;
-
   background: transparent;
   border-radius: 0;
-
   box-shadow: none;
 }
 
@@ -1019,7 +1103,6 @@ textarea {
   width: 54px;
   height: 54px;
   padding: 10px;
-
   flex-basis: 54px;
 }
 
@@ -1037,12 +1120,110 @@ textarea {
 
 .service-content p {
   margin-top: 5px;
-
   font-size: 11px;
   line-height: 1.45;
-
   color: #263844;
 }
+
+/* DESKTOP WORK */
+
+.work-section {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 12px;
+  align-items: center;
+  width: calc(100% - 40px);
+  max-width: 1260px;
+  margin: 12px auto;
+  padding: 18px 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.work-section .section-heading {
+  margin: 0;
+  padding-right: 16px;
+}
+
+.work-section .section-eyebrow {
+  margin: 0;
+  color: #071a26;
+  font-size: 22px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.work-section .section-eyebrow::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-top: 8px;
+  background: #20b6aa;
+  border-radius: 3px;
+}
+
+.work-section .section-heading h2 {
+  display: none;
+}
+
+/* PROJECTS ACROSS ONE ROW */
+
+.work-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  width: 100%;
+}
+
+/* COMPACT DESKTOP PROJECT */
+
+.work-card {
+  width: 100%;
+  margin: 0;
+  padding: 4px 18px;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.work-card:not(:last-child) {
+  border-right: 1px solid #d9e2e5;
+}
+
+.work-category {
+  margin-bottom: 5px;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+}
+
+.work-content h3 {
+  font-size: 14px;
+  line-height: 1.25;
+  color: #071a26;
+}
+
+.work-line {
+  display: none;
+}
+
+.work-summary {
+  margin-top: 5px;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.work-link {
+  margin-top: 7px;
+  font-size: 11px;
+}
+
+
+
+
+
+
 
  
   .section-container {
@@ -1078,18 +1259,5 @@ textarea {
   }
   .about-text-container p {
     font-size: 16px;
-  }
-
-  #work,
-  #about,
-  #contact {
-    padding: 60px 0;
-  }
-
-  #work h2 {
-    margin-top: 4%;
-  }
-  #about h2 {
-    margin-top: 15%;
   }
 }
