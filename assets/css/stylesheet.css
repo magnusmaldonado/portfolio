@@ -660,102 +660,13 @@ textarea {
 
 
 
-.section-container {
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 5%;
-  flex-direction: column;
-  height: 100%;
-}
 
-.work-img-container {
-  width: 100%;
-  margin: 0 0 5%;
-  height: 36vh;
-  position: relative;
-}
 
-.work-img-container:hover .work-img {
-  background-color: black;
-  opacity: 0.3;
-}
 
-.work-img {
-  background: url("../imgs/projects/pool-side.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  opacity: 1;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
 
-.graduate {
-  background: url("../imgs/projects/graduate.jpg") no-repeat;
-}
 
-.search {
-  background: url("../imgs/projects/search.jpg") no-repeat;
-}
 
-.fashion {
-  background: url("../imgs/projects/fashion.jpg") no-repeat;
-}
 
-.tracker {
-  background: url("../imgs/projects/tracker.jpg");
-}
-
-.seo {
-  background: url("../imgs/projects/seo.jpg");
-}
-
-.bg-properties {
-  background-size: cover;
-  background-position: center;
-}
-
-.img-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.7);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.work-img-container:hover .img-content {
-  opacity: 1;
-}
-
-.img-content h4 {
-  color: #fff;
-  font-size: 22px;
-  margin: 0;
-  line-height: 30px;
-  font-weight: 400;
-}
-
-.img-content p {
-  margin-top: 8px;
-  margin-bottom: 24px;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-}
 
 .about-container {
   width: 100%;
@@ -845,15 +756,6 @@ textarea {
   width: 100%;
 }
 
-#work h2 {
-  font-family: Raleway, sans-serif;
-  color: #252b3a;
-  font-size: 36px;
-  line-height: 46px;
-  font-weight: 700;
-  margin-top: 12%;
-}
-
 #about {
   flex-direction: row;
 }
@@ -926,10 +828,6 @@ textarea {
   .service-box {
     margin: 0;
   }
-  .section-container {
-    flex-direction: row;
-    padding: 0 2%;
-  }
 
   .work-section {
   padding: 60px 30px;
@@ -945,14 +843,6 @@ textarea {
     margin: 0;
   }
 
-
-
-
-  .work-img-container {
-    width: 48%;
-    margin: 0 0 3%;
-    height: 25vh;
-  }
   .about-text-container h2,
   .about-img-container h2 {
     font-size: 36px;
@@ -1226,14 +1116,7 @@ textarea {
 
 
  
-  .section-container {
-    height: 77vh;
-  }
-  .work-img-container {
-    width: 32.4%;
-    height: 52%;
-    margin: 0 0 1%;
-  }
+ 
   .about-container {
     flex-direction: row;
     margin: 0 20%;
