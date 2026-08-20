@@ -209,9 +209,8 @@ a {
   height: 220px;
   display: block;
   margin: auto;
-  object-fit: contain;
-  object-position: center bottom;
-  background-color: #BBD2D4;
+  object-fit: cover;
+  object-position: center;
   border-radius: 50%;
 }
 
@@ -1127,12 +1126,9 @@ a {
 }
 
 .about-image-container {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  display: block;
   width: 145px;
   height: 145px;
-  background-color: #BBD2D4;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -1141,8 +1137,8 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
+  object-fit: cover;
+  object-position: center;
 }
 
 .about-copy h3 {
