@@ -71,44 +71,6 @@ a {
   font: bold;
 }
 
-form {
-  padding-top: 5%;
-}
-
-form h2 {
-  font-family: Raleway, sans-serif;
-  color: #fff;
-  font-size: 27px;
-  line-height: 36px;
-  font-weight: 700;
-  text-align: center;
-  margin: 1% 0;
-}
-
-form h4 {
-  font-family: Raleway, sans-serif;
-  color: #fff;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  margin: 0;
-}
-
-input,
-textarea {
-  background-color: transparent;
-  border: 2px solid #714aff;
-  border-radius: 5px;
-  color: #fff;
-  line-height: 20px;
-  padding: 14px 34px;
-  width: 100%;
-}
-
-::placeholder {
-  color: #fff;
-}
-
 .brand {
   align-items: center;
 }
@@ -772,18 +734,6 @@ textarea {
 .fa_custom {
   color: #99aecf;
 }
-.contact-container {
-  flex-direction: column;
-  max-width: 1200px;
-  border-radius: 20px;
-  background-color: #252b3a;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 5%;
-  width: 90%;
-  padding: 60px 30px;
-  height: 90vh;
-}
 
 .laptop-only {
   display: none;
@@ -805,19 +755,10 @@ textarea {
   padding-top: 13%;
 }
 
-#submit {
-  width: 100%;
-}
 /* MEDIUM DEVICES */
 @media only screen and (min-width: 768px) {
   header {
     height: 10%;
-  }
-  form h4 {
-    font-size: 30px;
-  }
-  textarea {
-    height: 150px;
   }
 
   .logo {
@@ -882,9 +823,6 @@ textarea {
   gap: 22px 30px;
 }
 
-.contact-container {
-  height: 75vh;
-}
 }
 /* LARGE DEVICES */
 @media only screen and (min-width: 992px) {
@@ -899,11 +837,6 @@ textarea {
 
   nav {
     width: 60% !important;
-  }
-
-  form h2 {
-    font-size: 36px;
-    line-height: 46px;
   }
 
   .laptop-only {
@@ -1257,18 +1190,4 @@ textarea {
   font-size: 11px;
   line-height: 1.4;
 }
-
-
-
-
-
- 
- 
-
-  .contact-container {
-    margin: 6% 10% 0;
-    width: 80%;
-    height: 80vh;
-    padding: 60px 100px;
-  }
 }
