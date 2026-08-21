@@ -790,8 +790,7 @@ a {
   flex: 0 0 42px;
   width: 42px;
   height: 42px;
-  background: #e8f1f1;
-  border-radius: 50%;
+  object-fit: contain;
 }
 
 /* TEXT */
@@ -817,6 +816,17 @@ a {
   overflow-wrap: anywhere;
 }
 
+/* RESPONSIVE VIEW HELPERS
+========================================================================== */
+
+.mobile-tablet-view {
+  display: block;
+}
+
+.desktop-view {
+  display: none;
+}
+
 
 
 
@@ -836,14 +846,6 @@ a {
   display: none;
 }
 
-#services,
-#work,
-#about,
-#contact {
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
 
 /* MEDIUM DEVICES */
 @media only screen and (min-width: 768px) {
@@ -930,11 +932,7 @@ a {
 }
 /* LARGE DEVICES */
 @media only screen and (min-width: 992px) {
-  body,
-  html {
-    max-width: 1387px;
-    max-height: 100vh;
-  }
+  
   header {
     padding: 1% 7%;
   }
@@ -969,7 +967,7 @@ a {
 
   .services-section {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 130px minmax(0, 1fr);
   gap: 12px;
   align-items: center;
   width: calc(100% - 40px);
@@ -1016,7 +1014,8 @@ a {
 
 .services-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  min-width: 0;
   gap: 0;
   width: 100%;
 }
@@ -1073,7 +1072,7 @@ a {
 
 .work-section {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 130px minmax(0, 1fr);
   gap: 12px;
   align-items: center;
   width: calc(100% - 40px);
@@ -1116,7 +1115,8 @@ a {
 
 .work-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  min-width: 0;
   gap: 0;
   width: 100%;
 }
@@ -1167,7 +1167,7 @@ a {
 
 .about-section {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 130px minmax(0, 1fr);
   gap: 12px;
   align-items: center;
   width: calc(100% - 40px);
@@ -1251,7 +1251,7 @@ a {
 }
 
 .about-copy p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.55;
 }
 
@@ -1284,17 +1284,17 @@ a {
 }
 
 .strength-item h4 {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .strength-item p {
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.4;
 }
 
 .contact-section {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 130px minmax(0, 1fr);
   gap: 12px;
   align-items: center;
   width: calc(100% - 40px);
@@ -1353,13 +1353,14 @@ a {
 }
 
 .contact-intro p {
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.45;
 }
 
 .contact-options {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  min-width: 0;
   margin: 0;
   padding-left: 24px;
   border-top: 0;
@@ -1382,11 +1383,278 @@ a {
 }
 
 .contact-label {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .contact-value {
-  font-size: 10px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+/* RESPONSIVE VIEW HELPERS
+========================================================================== */
+
+.mobile-tablet-view {
+  display: none !important;
+}
+
+.desktop-view {
+  display: block;
+}
+
+/* DESKTOP PAGE SHELL
+========================================================================== */
+
+.desktop-view {
+  display: block;
+  width: 100%;
+}
+
+.desktop-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  padding: 36px 28px;
+  background: #071A26;
+}
+
+.desktop-content {
+  width: calc(100% - 220px);
+  margin-left: 220px;
+  padding: 14px 20px 0;
+}
+
+/* DESKTOP SIDEBAR
+========================================================================== */
+
+.desktop-brand {
+  text-align: center;
+}
+
+.desktop-logo {
+  display: block;
+  width: 95px;
+  height: 95px;
+  margin: 0 auto 18px;
+  object-fit: contain;
+}
+
+.desktop-brand h2 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 23px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.desktop-brand h2 span {
+  display: block;
+}
+
+.desktop-brand h2 span:first-child {
+  color: #ffffff;
+}
+
+.desktop-brand h2 span:last-child {
+  color: #20b6aa;
+}
+
+.desktop-brand p {
+  margin: 14px 0 0;
+  color: #20b6aa;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.sidebar-divider {
+  width: 100%;
+  height: 1px;
+  margin: 28px 0;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* DESKTOP NAV
+========================================================================== */
+
+.desktop-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.desktop-nav-link {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  color: #dfe7e9;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.desktop-nav-link:hover,
+.desktop-nav-link.active {
+  color: #20b6aa;
+}
+
+/* DESKTOP HERO CARD
+========================================================================== */
+
+.desktop-hero {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+  padding: 24px 38px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.desktop-eyebrow {
+  margin: 0 0 8px;
+  color: #075765;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.desktop-hero h1 {
+  margin: 0;
+  color: #071a26;
+  font-family: "Raleway", sans-serif;
+  font-size: 38px;
+  line-height: 1.08;
+  font-weight: 800;
+}
+
+.desktop-hero h1 span {
+  display: block;
+  color: #075765;
+}
+
+.desktop-hero-description {
+  max-width: 420px;
+  margin: 16px 0 20px;
+  color: #263844;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.desktop-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 20px;
+  background: #05606b;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.desktop-hero-btn:hover {
+  background: #087582;
+}
+
+.desktop-hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 240px;
+}
+
+.desktop-process-image {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+}
+
+.services-section,
+.work-section,
+.about-section,
+.contact-section {
+  width: calc(100% - 260px);
+  max-width: none;
+  margin-top: 12px;
+  margin-right: 20px;
+  margin-bottom: 12px;
+  margin-left: 240px;
+}
+
+.service-box,
+.work-card,
+.contact-item,
+.service-content,
+.work-content,
+.contact-content {
+  min-width: 0;
+}
+
+.service-content h3,
+.service-content p,
+.work-content h3,
+.work-summary,
+.contact-label,
+.contact-value {
+  overflow-wrap: anywhere;
+}
+
+.service-content p {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #263844;
+}
+
+.service-content h3 {
+  font-size: 16px;
+}
+
+.work-summary {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.work-link {
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.work-content h3 {
+  font-size: 15px;
+}
+
+.work-category {
+  font-size: 16px;
+}
+
+.about-copy p {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.strength-item p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.contact-intro p {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.contact-value {
+  font-size: 14px;
   line-height: 1.35;
 }
 

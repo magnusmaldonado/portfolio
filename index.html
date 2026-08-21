@@ -68,6 +68,7 @@
 
 
   <body>
+    <div class="mobile-tablet-view">
     <header class="flex">
         <div class="flex brand">
           <img
@@ -86,18 +87,9 @@
             <p>Business Operations Consultant</p>
           </div>
         </div>
-            <nav class="flex laptop-only" style="width: 100%">
-              <ul class="flex" style="width: 100%">
-                <li><a class="menu-link" href="#home">Home</a></li>
-                <li><a class="menu-link" href="#about">About</a></li>
-                <li><a class="menu-link" href="#services">Services</a></li>
-                <li><a class="menu-link" href="#work">Work</a></li>
-                <li><a href="#contact" class="all-btns menu-link">Contact</a></li>
-              </ul>
-            </nav>
             <nav class="mobile-menu flex mobile-only" style="width: 100%">
               <ul class="flex">
-                <li><a class="menu-link" href="#home">Home</a></li>
+                <li><a class="menu-link" href="#mobile-home">Home</a></li>
                 <li><a class="menu-link" href="#about">About</a></li>
                 <li><a class="menu-link" href="#services">Services</a></li>
                 <li><a class="menu-link" href="#work">Work</a></li>
@@ -113,7 +105,7 @@
 
         
 
-    <main id="home">
+    <main id="mobile-home">
       <section class="hero">
         <div class="hero-portrait">
           <div class="dot-grid dot-grid-left"></div>
@@ -141,118 +133,54 @@
           </div>
           <div class="gradient-orb orb-large"></div>
       </section>
-    </main> 
+    </main>
+    </div>
+    
+    <!-- DESKTOP LANDING PAGE -->
+    <div class="desktop-view">
+      <aside class="desktop-sidebar">
+        <div class="desktop-brand">
+          <img
+            src="./assets/imgs/logo.png"
+            alt="Magnus Maldonado logo"
+            class="desktop-logo"
+          />
+          <h2><span>Magnus</span> <span>Maldonado</span></h2>
+          <p>Business Operations Consultant</p>
+        </div>
 
 
-    <section id="services" class="services-section">
-      <div class="section-heading">
-        <p class="section-eyebrow">Services</p>
-        <h2>
-          How I Help Buinessess <span>Work Better</span>
-        </h2>
+    <div class="sidebar-divider"></div>
+    <nav class="desktop-nav">
+      <a href="#home" class="desktop-nav-link active">Home</a>
+      <a href="#about" class="desktop-nav-link">About</a>
+      <a href="#services" class="desktop-nav-link">Services</a>
+      <a href="#work" class="desktop-nav-link">Work</a>
+      <a href="#contact" class="desktop-nav-link">Contact</a>
+    </nav>
+    <div class="desktop-socials">
+      
+    </div>
+  </aside>
+  <div class="desktop-content">
+    <section id="home" class="desktop-hero">
+      <div class="desktop-hero-copy">
+        <p class="desktop-eyebrow">Hi, I'm Magnus</p>
+        <h1>I help businesses<span>work better</span>so they can grow.</h1>
+        <p class="desktop-hero-description">I find what's slowing your business down, design smarter systems, and implement solutions that create clarity, efficiency, and results.</p>
+        <a href="#contact" class="desktop-hero-btn">Let's Fix What's Not Working →</a>
       </div>
-      <div class="services-container">
-        <article class="service-box">
-          <div class="service-icon">
-            <img
-              src="./assets/imgs/operational-assessment.png"
-              alt=""
-            />
-          </div>
-          <div class="service-content">
-            <h3>Operational Assessment</h3>
-            <div class="service-line"></div>
-            <p>I look at how work currently moves through your business, identify bottlenecks, unnecessary steps, and recurring problems, and determine what's actually causing the friction.</p>
-          </div>
-        </article>
-        <article class="service-box">
-          <div class="service-icon">
-            <img
-              src="./assets/imgs/workflow-design.png"
-              alt=""
-            />
-          </div>
-          <div class="service-content">
-            <h3>Process &amp; Workflow Design</h3>
-            <div class="service-line"></div>
-            <p>I redesign workflows to make responsibilities, handoffs, approvals, and communication clearer and more efficient.</p>
-          </div>
-        </article>
-        <article class="service-box">
-          <div class="service-icon">
-            <img
-              src="./assets/imgs/systems-automation.png"
-              alt=""
-            />
-          </div>
-          <div class="service-content">
-            <h3>Systems &amp; Automation</h3>
-            <div class="service-line"></div>
-            <p>I identify repetitive or manual work that can be simplified or automated and build practical solutions using the tools and resources you already have.</p>
-          </div>
-        </article>
-        <article class="service-box">
-          <div class="service-icon">
-            <img
-              src="./assets/imgs/sop-documentation.png"
-              alt=""
-            />
-          </div>
-          <div class="service-content">
-            <h3>SOPs &amp; Documentation</h3>
-            <div class="service-line"></div>
-            <p>I create clear, usable documentation that standarsizes processes, defines expectations, and makes it easier for people to do the work correctly.</p>
-          </div>
-        </article>
-      </div>  
-    </section>
-    <section id="work" class="work-section">
-      <div class="section-heading">
-        <p class="section-eyebrow">Work</p>
-        <h2>Problems I've <span>Solved</span></h2>
-      </div>
-      <div class="work-container">
-        <article class="work-card">
-          <div class="work-content">
-            <p class="work-category">Systems &amp; Automation</p>
-            <h3>Campaign Tracking System</h3>
-            <div class="work-line"></div>
-            <p class="work-summary">
-              Replaced manual tracking-link requests with a self-service system that standaardized campaign URLs, preserved attribution, and reduced interruptions.
-            </p>
-            <a href="#" class="work-link">View Case Study →</a>
-          </div>
-        </article>
-        <article class="work-card">
-          <div class="work-content">
-            <p class="work-category">Process &amp; Workflow Design</p>
-            <h3>Webinar Operations Redesign</h3>
-            <div class="work-line"></div>
-            <p class="work-summary">Redesign scheduling, presenter intake, and promotional planning to reduce last-minute work and improve campaign efficiency.</p>
-            <a href="#" class="work-link">View Case Study →</a>
-          </div>
-        </article>
-        <article class="work-card">
-          <div class="work-content">
-            <p class="work-category">Process Standardization</p>
-            <h3>Email Intake &amp; Workflow Standardization</h3>
-            <div class="work-line"></div>
-            <p class="work-summary">Created a structured intake process with clearer requirements, turnaround expectations, and shared campaign scheduling.</p>
-            <a href="#" class="work-link">View Case Study →</a>
-          </div>
-        </article>
-        <article class="work-card">
-          <div class="work-content">
-            <p class="work-category">Systems &amp; Automation</p>
-            <h3>Asana Workflow Integration</h3>
-            <div class="work-line"></div>
-            <p class="work-summary">Built a working integration that transferred parent-ticket information into downstream tasks, reducing duplicate work and unnecessary searching.</p>
-            <a href="#" class="work-link">View Case Study →</a>
-          </div>
-        </article>
+      <div class="desktop-hero-visual">
+        <img
+          src="./assets/imgs/process.png"
+          alt="Process transformation from business chaos to clear systems"
+          class="desktop-process-image"
+        />
       </div>
     </section>
-    <section id="about" class="about-section">
+  </div>
+</div>
+<section id="about" class="about-section">
       <div class="section-heading">
         <p class="section-eyebrow">About Me</p>
         <h2>Systems Thinking Meets <span>Technical Experience</span></h2>
@@ -321,8 +249,114 @@
         </div>
       </div>
     </section>
-
-
+    <section id="services" class="services-section">
+      <div class="section-heading">
+        <p class="section-eyebrow">Services</p>
+        <h2>
+          How I Help Buinessess <span>Work Better</span>
+        </h2>
+      </div>
+      <div class="services-container">
+        <article class="service-box">
+          <div class="service-icon">
+            <img
+              src="./assets/imgs/operational-assessment.png"
+              alt="Magnifying Glass Icon"
+            />
+          </div>
+          <div class="service-content">
+            <h3>Operational Assessment</h3>
+            <div class="service-line"></div>
+            <p>I look at how work currently moves through your business, identify bottlenecks, unnecessary steps, and recurring problems, and determine what's actually causing the friction.</p>
+          </div>
+        </article>
+        <article class="service-box">
+          <div class="service-icon">
+            <img
+              src="./assets/imgs/workflow-design.png"
+              alt="Arrows Icon"
+            />
+          </div>
+          <div class="service-content">
+            <h3>Process &amp; Workflow Design</h3>
+            <div class="service-line"></div>
+            <p>I redesign workflows to make responsibilities, handoffs, approvals, and communication clearer and more efficient.</p>
+          </div>
+        </article>
+        <article class="service-box">
+          <div class="service-icon">
+            <img
+              src="./assets/imgs/systems-automation.png"
+              alt="Gear Icon"
+            />
+          </div>
+          <div class="service-content">
+            <h3>Systems &amp; Automation</h3>
+            <div class="service-line"></div>
+            <p>I identify repetitive or manual work that can be simplified or automated and build practical solutions using the tools and resources you already have.</p>
+          </div>
+        </article>
+        <article class="service-box">
+          <div class="service-icon">
+            <img
+              src="./assets/imgs/sop-documentation.png"
+              alt="Document Icon"
+            />
+          </div>
+          <div class="service-content">
+            <h3>SOPs &amp; Documentation</h3>
+            <div class="service-line"></div>
+            <p>I create clear, usable documentation that standarsizes processes, defines expectations, and makes it easier for people to do the work correctly.</p>
+          </div>
+        </article>
+      </div>  
+    </section>
+    <section id="work" class="work-section">
+      <div class="section-heading">
+        <p class="section-eyebrow">Work</p>
+        <h2>Problems I've <span>Solved</span></h2>
+      </div>
+      <div class="work-container">
+        <article class="work-card">
+          <div class="work-content">
+            <p class="work-category">Systems &amp; Automation</p>
+            <h3>Campaign Tracking System</h3>
+            <div class="work-line"></div>
+            <p class="work-summary">
+              Replaced manual tracking-link requests with a self-service system that standaardized campaign URLs, preserved attribution, and reduced interruptions.
+            </p>
+            <a href="#" class="work-link">View Case Study →</a>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-content">
+            <p class="work-category">Process &amp; Workflow Design</p>
+            <h3>Webinar Operations Redesign</h3>
+            <div class="work-line"></div>
+            <p class="work-summary">Redesign scheduling, presenter intake, and promotional planning to reduce last-minute work and improve campaign efficiency.</p>
+            <a href="#" class="work-link">View Case Study →</a>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-content">
+            <p class="work-category">Process Standardization</p>
+            <h3>Email Intake &amp; Workflow Standardization</h3>
+            <div class="work-line"></div>
+            <p class="work-summary">Created a structured intake process with clearer requirements, turnaround expectations, and shared campaign scheduling.</p>
+            <a href="#" class="work-link">View Case Study →</a>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-content">
+            <p class="work-category">Systems &amp; Automation</p>
+            <h3>Asana Workflow Integration</h3>
+            <div class="work-line"></div>
+            <p class="work-summary">Built a working integration that transferred parent-ticket information into downstream tasks, reducing duplicate work and unnecessary searching.</p>
+            <a href="#" class="work-link">View Case Study →</a>
+          </div>
+        </article>
+      </div>
+    </section>
     <section id="contact" class="contact-section">
       <div class="section-heading">
         <p class="section-eyebrow">Contact</p>
