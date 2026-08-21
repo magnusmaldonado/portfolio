@@ -1359,7 +1359,7 @@ a {
 
 .contact-options {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: 1.35fr 1fr 1fr;
   min-width: 0;
   margin: 0;
   padding-left: 24px;
@@ -1389,6 +1389,8 @@ a {
 .contact-value {
   font-size: 14px;
   line-height: 1.35;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 /* RESPONSIVE VIEW HELPERS
@@ -1588,6 +1590,7 @@ a {
   margin-right: 20px;
   margin-bottom: 12px;
   margin-left: 240px;
+  align-items: start;
 }
 
 .service-box,
@@ -1606,6 +1609,13 @@ a {
 .contact-label,
 .contact-value {
   overflow-wrap: anywhere;
+}
+
+.services-section .section-heading,
+.work-section .section-heading,
+.about-section > .section-heading,
+.contact-section > .section-heading {
+  padding-top: 4px;
 }
 
 .service-content p {
