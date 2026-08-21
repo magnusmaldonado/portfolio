@@ -1336,10 +1336,7 @@ a {
 }
 
 .contact-section {
-  display: grid;
-  grid-template-columns: 130px minmax(0, 1fr);
-  gap: 12px;
-  align-items: center;
+  display: block;
   width: calc(100% - 40px);
   max-width: 1260px;
   margin: 12px auto;
@@ -1385,6 +1382,7 @@ a {
   background: transparent;
   border-radius: 0;
   box-shadow: none;
+  gap: 30px;
 }
 
 .contact-intro {
@@ -1392,7 +1390,7 @@ a {
 }
 
 .contact-intro h3 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .contact-intro p {
