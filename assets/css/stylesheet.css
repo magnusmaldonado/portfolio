@@ -1413,10 +1413,6 @@ a {
   border-bottom: 0;
 }
 
-.contact-item:not(:last-child) {
-  border-right: 1px solid #d9e2e5;
-}
-
 .contact-icon {
   flex-basis: 34px;
   width: 34px;
