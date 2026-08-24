@@ -410,6 +410,28 @@ a {
   padding: 0;
 }
 
+/* SERVICES LEARN MORE */
+
+.services-more {
+  width: 100%;
+  margin-top: 22px;
+  text-align: left;
+}
+
+.services-more-link {
+  display: inline-block;
+  color: #20b6aa;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition: 0.2s ease;
+}
+
+.services-more-link:hover {
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
 /* INDIVIDUAL SERVICE CARD */
 
 .service-box {
