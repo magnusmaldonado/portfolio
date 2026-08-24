@@ -420,7 +420,7 @@ a {
 
 .services-more-link {
   display: inline-block;
-  color: #20b6aa;
+  color: #075765;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -571,9 +571,10 @@ a {
 .work-link {
   display: inline-block;
   margin-top: 16px;
-  color: #2b8c83;
-  font-size: 14px;
+  color: #075765;
+  font-size: 15px;
   font-weight: 800;
+  letter-spacing: .5px;
 }
 
 .work-link:hover {
@@ -1105,9 +1106,6 @@ a {
 
   .work-link {
     margin-top: 7px;
-    font-size: 15px;
-    color: #075765;
-    letter-spacing: .5px;
   }
 
 /* DESKTOP ABOUT */
