@@ -1421,7 +1421,8 @@ a {
     filter: brightness(0) invert(1);
   }
 
-  .desktop-nav-link:hover {
+  .desktop-nav-link:hover,
+    .desktop-nav-link.active {
     color: #20b6aa;
   }
 
@@ -1481,6 +1482,22 @@ a {
       transition: none;
     }
   }
+
+  .desktop-socials:not(.desktop-socials-full) .desktop-social-link {
+    animation-delay: 0.45s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+  .desktop-social-link {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .desktop-social-icon {
+    transition: none;
+  }
+}
 
 /* DESKTOP HERO CARD
 ========================================================================== */

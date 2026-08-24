@@ -284,14 +284,26 @@
   text-align: center;
 }
 
-.service-combo-item img {
-  width: 48px;
-  height: 48px;
-  padding: 9px;
-  object-fit: contain;
+.service-combo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  padding: 10px;
+  background: #ffffff;
   border: 1px solid #20b6aa;
   border-radius: 50%;
 }
+
+.service-combo-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
 
 .service-combo-item span {
   display: block;
@@ -401,4 +413,221 @@
   .service-combo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+/* DESKTOP
+   ========================================================================== */
+
+@media only screen and (min-width: 992px) {
+
+  .services-page {
+    width: calc(100% - 220px);
+    min-height: 100vh;
+    margin-left: 220px;
+    padding: 30px 32px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+  }
+
+
+  /* INTRO
+     ====================================================================== */
+
+  .services-page-intro {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: none;
+    margin: 0 0 10px;
+    padding: 30px 34px;
+    background: #071a26;
+    border-radius: 16px;
+  }
+
+  .services-page-eyebrow {
+    font-size: 16px;
+  }
+
+  .services-page-intro h1 {
+    max-width: 650px;
+    font-size: 44px;
+    line-height: 1.08;
+  }
+
+  .services-intro-copy {
+    max-width: 900px;
+  }
+
+  .services-intro-copy p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+
+  /* SERVICE CARDS
+     ====================================================================== */
+
+  .service-detail {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+    padding: 30px;
+    border-radius: 16px;
+  }
+
+  .service-detail-heading {
+    gap: 18px;
+    margin-bottom: 22px;
+  }
+
+  .service-detail-icon {
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    padding: 12px;
+  }
+
+  .service-number {
+    min-width: 38px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .service-detail-title h2 {
+    font-size: 22px;
+  }
+
+  .service-detail-title h3 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .service-detail-copy {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .service-detail-copy p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .service-list-block h4,
+  .service-combo h4 {
+    font-size: 16px;
+  }
+
+  .service-list-block li {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+
+  /* COMPREHENSIVE SERVICE
+     ====================================================================== */
+
+  .service-detail-featured {
+    grid-column: 1 / -1;
+    margin-top: 0;
+    padding: 34px;
+  }
+
+  .service-detail-featured .service-detail-copy {
+    max-width: none;
+  }
+
+
+  /* FOUR SERVICES INCLUDED IN FULL ENGAGEMENT */
+
+  .service-combo-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .service-combo-item {
+    min-height: 150px;
+    padding: 20px 14px;
+  }
+
+  .service-combo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #20b6aa;
+  border-radius: 50%;
+}
+
+.service-combo-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+  .service-combo-item span {
+    font-size: 14px;
+  }
+
+
+  /* CTA
+     ====================================================================== */
+
+  .services-cta {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 34px;
+    border-radius: 16px;
+  }
+
+  .services-cta h2 {
+    font-size: 28px;
+  }
+
+  .services-cta p {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .services-cta-btn {
+    width: auto;
+    max-width: 420px;
+    margin: 26px auto 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* Socials
+     ====================================================================== */
+
+    .desktop-socials-full {
+        gap: 16px;
+    }
+
+    .desktop-socials-full .desktop-social-link {
+        margin: 0;
+    }
+
+    .desktop-socials-full .desktop-social-link:nth-child(1) {
+        animation-delay: 0.25s;
+    }
+
+    .desktop-socials-full .desktop-social-link:nth-child(2) {
+    animation-delay: 0.45s;
+    }
+
+    .desktop-socials-full .desktop-social-link:nth-child(3) {
+    animation-delay: 0.65s;
+    }
 }
