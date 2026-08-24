@@ -967,6 +967,21 @@ a {
     width: 100%;
   }
 
+  .services-more {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+  padding-right: 18px;
+}
+
+.services-more-link {
+  color: #075765;
+  font-size: 15px;
+}
+
+.services-more-link:hover {
+  color: #20b6aa;
+}
+
 /* COMPACT DESKTOP ITEM */
 
   .service-box {
@@ -1090,7 +1105,9 @@ a {
 
   .work-link {
     margin-top: 7px;
-    font-size: 14px;
+    font-size: 15px;
+    color: #075765;
+    letter-spacing: .5px;
   }
 
 /* DESKTOP ABOUT */
