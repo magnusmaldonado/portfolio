@@ -1,0 +1,427 @@
+/* ABOUT PAGE
+   ========================================================================== */
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 125px 16px 60px;
+  background:
+    linear-gradient(
+      to bottom,
+      #021b24 0%,
+      #045159 100%
+    );
+}
+
+
+/* INTRO
+   ========================================================================== */
+
+.about-page-intro {
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.about-page-eyebrow,
+.about-section-eyebrow {
+  margin: 0 0 12px;
+  color: #20b6aa;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.about-page-intro h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.12;
+}
+
+.about-page-intro h1 span {
+  display: block;
+  color: #20b6aa;
+}
+
+.about-page-line {
+  width: 44px;
+  height: 3px;
+  margin: 14px 0 22px;
+  background: #20b6aa;
+  border-radius: 3px;
+}
+
+.about-page-intro-copy p {
+  margin: 0 0 18px;
+  color: #d5e0e3;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+.about-page-intro-copy p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* SHARED ABOUT SECTION HEADING
+   ========================================================================== */
+
+.about-section-heading {
+  margin-bottom: 22px;
+}
+
+.about-section-heading h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+
+/* MY APPROACH
+   ========================================================================== */
+
+.about-approach {
+  width: 100%;
+  margin-bottom: 46px;
+}
+
+.approach-card {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 22px 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.approach-card:last-child {
+  margin-bottom: 0;
+}
+
+
+/* APPROACH ICON */
+
+.approach-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #e8f1f1;
+  border-radius: 50%;
+}
+
+.approach-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* NUMBER */
+
+.approach-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 28px;
+  margin-bottom: 10px;
+  padding: 0 8px;
+  background: #20b6aa;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+
+/* APPROACH COPY */
+
+.approach-heading-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.approach-icon {
+  flex: 0 0 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 0;
+  padding: 12px;
+  background: #e8f1f1;
+  border-radius: 50%;
+}
+
+.approach-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.approach-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 28px;
+  margin-bottom: 7px;
+  padding: 0 8px;
+  background: #20b6aa;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.approach-title h3 {
+  margin: 0;
+  color: #071a26;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.approach-content p {
+  margin: 0 0 14px;
+  color: #263844;
+  font-size: 16px;
+  line-height: 1.65;
+  letter-spacing: 0.8px;
+}
+
+
+/* WHAT I BRING
+   ========================================================================== */
+
+.about-page-strengths {
+  width: 100%;
+  margin-bottom: 46px;
+}
+
+.about-strength-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 18px 18px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-strength-card:last-child {
+  margin-bottom: 0;
+}
+
+.about-strength-icon {
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.about-strength-card h3 {
+  margin: 0 0 5px;
+  color: #075765;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.about-strength-card p {
+  margin: 0;
+  color: #263844;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* PERSONAL SECTION
+   ========================================================================== */
+
+.about-personal-card {
+  width: 100%;
+  margin-bottom: 36px;
+  padding: 24px 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.about-personal-heading .about-section-eyebrow {
+  color: #075765;
+}
+
+
+/* PORTRAIT
+   ========================================================================== */
+
+.about-page-portrait {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  margin: 10px auto 28px;
+}
+
+.about-page-headshot {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 205px;
+  height: 205px;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+
+/* DOT GRID */
+
+.about-page-dot-grid {
+  position: absolute;
+  z-index: 1;
+  width: 72px;
+  height: 72px;
+  background-image:
+    radial-gradient(
+      circle,
+      #2b8c83 2px,
+      transparent 2.5px
+    );
+  background-size: 12px 12px;
+}
+
+.about-page-dot-grid-left {
+  top: 4px;
+  left: -4px;
+}
+
+.about-page-dot-grid-right {
+  right: 0;
+  bottom: 6px;
+  background-image:
+    radial-gradient(
+      circle,
+      #9cb4c0 2px,
+      transparent 2.5px
+    );
+}
+
+
+/* ARC */
+
+.about-page-portrait-arc {
+  position: absolute;
+  z-index: 4;
+  width: 220px;
+  height: 220px;
+  top: -6px;
+  left: 5px;
+  border-radius: 50%;
+  background:
+    conic-gradient(
+      from 180deg,
+      #27b8ae 0deg,
+      #27b8ae 95deg,
+      transparent 95deg,
+      transparent 360deg
+    );
+
+  -webkit-mask:
+    radial-gradient(
+      farthest-side,
+      transparent calc(100% - 3px),
+      #000 calc(100% - 3px)
+    );
+
+  mask:
+    radial-gradient(
+      farthest-side,
+      transparent calc(100% - 3px),
+      #000 calc(100% - 3px)
+    );
+}
+
+
+/* PERSONAL COPY */
+
+.about-personal-copy p {
+  margin: 0 0 16px;
+  color: #263844;
+  font-size: 16px;
+  line-height: 1.65;
+  letter-spacing: 0.8px;
+}
+
+.about-personal-copy p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* CTA
+   ========================================================================== */
+
+.about-page-cta {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  padding: 24px 20px;
+  background: rgba(2, 27, 36, 0.5);
+  border: 1px solid #20b6aa;
+  border-radius: 16px;
+}
+
+.about-cta-icon {
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.about-cta-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.about-page-cta h2 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.about-page-cta p {
+  margin: 0 0 12px;
+  color: #d5e0e3;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.about-cta-link {
+  display: inline-block;
+  color: #20b6aa;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease;
+}
+
+.about-cta-link:hover {
+  color: #ffffff;
+  transform: translateX(3px);
+}
