@@ -9,7 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400&family=Raleway:wght@400;700;800&display=swap");
 * {
   box-sizing: border-box;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 body,
@@ -260,7 +260,6 @@ a {
 .hero h1 {
   margin: 0;
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
   font-size: 38px;
   line-height: 1.08;
   font-weight: 800;
@@ -378,7 +377,6 @@ a {
 .section-eyebrow {
   margin: 0 0 8px;
   color: #20b6aa;
-  font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 1.5px;
@@ -388,7 +386,6 @@ a {
 .section-heading h2 {
   margin: 0;
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
   font-size: 30px;
   line-height: 1.15;
   font-weight: 800;
@@ -452,7 +449,6 @@ a {
 .service-content h3 {
   margin: 0;
   color: #071a26;
-  font-family: "Raleway", sans-serif;
   font-size: 21px;
   line-height: 1.2;
   font-weight: 800;
@@ -511,7 +507,6 @@ a {
 .work-category {
   margin: 0 0 8px;
   color: #20b6aa;
-  font-family: "Raleway", sans-serif;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1.2px;
@@ -523,7 +518,6 @@ a {
 .work-content h3 {
   margin: 0;
   color: #071a26;
-  font-family: "Raleway", sans-serif;
   font-size: 21px;
   line-height: 1.2;
   font-weight: 800;
@@ -595,7 +589,6 @@ a {
 .about-copy h3 {
   margin: 0;
   color: #071a26;
-  font-family: "Raleway", sans-serif;
   font-size: 22px;
   line-height: 1.2;
   font-weight: 800;
@@ -640,7 +633,6 @@ a {
 .strength-item h4 {
   margin: 0 0 4px;
   color: #075765;
-  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 800;
 }
@@ -662,7 +654,6 @@ a {
 .strength-item h4 {
   margin: 0 0 4px;
   color: #075765;
-  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 800;
 }
@@ -695,7 +686,6 @@ a {
 .contact-intro h3 {
   margin: 0;
   color: #071a26;
-  font-family: "Raleway", sans-serif;
   font-size: 22px;
   line-height: 1.2;
   font-weight: 800;
@@ -758,7 +748,6 @@ a {
 .contact-label {
   margin: 0 0 3px;
   color: #075765;
-  font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: 800;
 }
@@ -1091,7 +1080,6 @@ a {
     display: inline-block;
     margin-top: 4px;
     color: #075765;
-    font-family: "Raleway", sans-serif;
     font-size: 15px;
     font-weight: 800;
   }
@@ -1362,7 +1350,6 @@ a {
 
   .desktop-brand h2 {
     margin: 0;
-    font-family: "Raleway", sans-serif;
     font-size: 23px;
     line-height: 1.15;
     font-weight: 700;
@@ -1505,7 +1492,6 @@ a {
   .desktop-eyebrow {
     margin: 0 0 8px;
     color: #075765;
-    font-family: "Raleway", sans-serif;
     font-size: 17px;
     font-weight: 800;
   }
@@ -1513,7 +1499,6 @@ a {
   .desktop-hero h1 {
     margin: 0;
     color: #071a26;
-    font-family: "Raleway", sans-serif;
     font-size: 38px;
     line-height: 1.08;
     font-weight: 800;
