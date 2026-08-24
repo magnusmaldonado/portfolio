@@ -122,23 +122,27 @@ a {
   transform: translateY(-8px) rotate(-45deg);
 }
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   left: -100%;
-  top: 86px;
+  top: 90px;
+  width: 100%;
   background-color: #071A26;
   transition: 0.3s;
-  z-index: 1000 !important;
+  z-index: 1 !important;
+  overflow-y: auto;
 }
 
 .mobile-menu ul {
+  display: flex;
   flex-direction: column;
   width: 100% !important;
   align-items: center;
-  padding: 0;
+  padding: 28px 0 32px;
   margin: 0;
+  gap: 18px;
 }
 .mobile-menu li {
-  margin: 12px 0;
+  margin: 0;
   font-weight: bold;
 }
 
@@ -794,6 +798,10 @@ a {
 
   .mobile-menu {  
     top: 100px;
+  }
+
+  .mobile-menu ul {  
+    gap: 30px;
   }
 
   .hamburger.active .bar:nth-child(1) { 
