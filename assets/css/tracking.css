@@ -1,0 +1,613 @@
+/* CASE STUDY PAGE
+   ========================================================================== */
+
+.case-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 16px 60px;
+  background:
+    linear-gradient(
+      to bottom,
+      #021b24 0%,
+      #045159 100%
+    );
+}
+
+
+/* HERO
+   ========================================================================== */
+
+.case-hero {
+  width: 100%;
+  margin-bottom: 38px;
+}
+
+.case-back-link {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: #20b6aa;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  transition: 0.2s ease;
+}
+
+.case-back-link:hover {
+  color: #ffffff;
+  transform: translateX(-3px);
+}
+
+.case-eyebrow,
+.case-section-eyebrow {
+  margin: 0 0 10px;
+  color: #20b6aa;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.case-hero h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+.case-hero-description {
+  margin: 18px 0 26px;
+  color: #d5e0e3;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.8px;
+}
+
+
+/* HERO META */
+
+.case-hero-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.case-meta-item {
+  width: 100%;
+}
+
+.case-meta-label {
+  margin: 0 0 4px;
+  color: #20b6aa;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.case-meta-value {
+  margin: 0;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+
+/* SHARED WHITE SECTION
+   ========================================================================== */
+
+.case-section {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 26px 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* SECTION HEADINGS */
+
+.case-section-heading {
+  margin-bottom: 22px;
+}
+
+.case-section-heading h2 {
+  margin: 0;
+  color: #071a26;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.case-section-heading h2 span {
+  display: block;
+  margin-top: 5px;
+  color: #075765;
+}
+
+.case-title-line {
+  width: 44px;
+  height: 3px;
+  margin-top: 12px;
+  background: #20b6aa;
+  border-radius: 3px;
+}
+
+
+/* STORY COPY
+   ========================================================================== */
+
+.case-story p {
+  margin: 0 0 17px;
+  color: #263844;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+}
+
+.case-story p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* PULL QUOTES
+   ========================================================================== */
+
+.case-quote {
+  position: relative;
+  margin: 26px 0;
+  padding: 20px 18px 20px 22px;
+  background: #e8f1f1;
+  border-left: 4px solid #20b6aa;
+  border-radius: 0 12px 12px 0;
+  color: #075765;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.case-quote-centered {
+  text-align: center;
+  border-left: none;
+  border-radius: 12px;
+}
+
+
+/* EMPHASIS
+   ========================================================================== */
+
+.case-emphasis {
+  margin-top: 24px;
+  padding: 20px;
+  background: #071a26;
+  border-radius: 12px;
+}
+
+.case-emphasis p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.case-emphasis strong {
+  display: block;
+  margin-top: 6px;
+  color: #20b6aa;
+}
+
+
+/* AT A GLANCE
+   ========================================================================== */
+
+.case-overview-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.case-overview-card {
+  padding: 20px;
+  background: #e8f1f1;
+  border-radius: 14px;
+}
+
+.case-overview-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 28px;
+  margin-bottom: 10px;
+  padding: 0 8px;
+  background: #20b6aa;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.case-overview-card h3 {
+  margin: 0 0 9px;
+  color: #071a26;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.case-overview-card p {
+  margin: 0;
+  color: #263844;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* BEFORE / AFTER
+   ========================================================================== */
+
+.workflow-card {
+  margin-bottom: 16px;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.workflow-before {
+  background: #fff4f4;
+  border: 1px solid #f0cccc;
+}
+
+.workflow-after {
+  background: #e8f5f3;
+  border: 1px solid #b9ded9;
+}
+
+.workflow-label {
+  margin-bottom: 18px;
+}
+
+.workflow-label span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.workflow-before .workflow-label span {
+  color: #bf3b46;
+}
+
+.workflow-after .workflow-label span {
+  color: #0d8985;
+}
+
+.workflow-label strong {
+  color: #071a26;
+  font-size: 18px;
+}
+
+.workflow-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: workflow;
+}
+
+.workflow-steps li {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 34px;
+  color: #263844;
+  font-size: 15px;
+  line-height: 1.5;
+  counter-increment: workflow;
+}
+
+.workflow-steps li:last-child {
+  margin-bottom: 0;
+}
+
+.workflow-steps li::before {
+  content: counter(workflow);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #075765;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+
+/* BUILDER SCREENSHOT
+   ========================================================================== */
+
+.builder-figure {
+  width: 100%;
+  margin: 28px 0;
+}
+
+.builder-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+}
+
+.builder-figure figcaption {
+  margin-top: 12px;
+  color: #62727a;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+/* BUILDER FIELDS
+   ========================================================================== */
+
+.builder-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.builder-field-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  background: #f4f8f8;
+  border-radius: 12px;
+}
+
+.builder-field-card > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  background: #20b6aa;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.builder-field-card h3 {
+  margin: 0 0 4px;
+  color: #075765;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.builder-field-card p {
+  margin: 0;
+  color: #263844;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* OUTLINE LINK
+   ========================================================================== */
+
+.case-outline-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50px;
+  margin-top: 24px;
+  padding: 12px 18px;
+  border: 2px solid #20b6aa;
+  border-radius: 8px;
+  color: #075765;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  transition: 0.2s ease;
+}
+
+.case-outline-btn:hover {
+  background: #20b6aa;
+  color: #ffffff;
+}
+
+
+/* VERIFICATION CARD
+   ========================================================================== */
+
+.verification-card {
+  margin-top: 24px;
+  padding: 20px;
+  background: #e8f1f1;
+  border-radius: 14px;
+}
+
+.verification-card h3 {
+  margin: 0 0 12px;
+  color: #075765;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.verification-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.verification-card li {
+  margin-bottom: 8px;
+  color: #263844;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.verification-card li:last-child {
+  margin-bottom: 0;
+}
+
+.verification-card li::marker {
+  color: #20b6aa;
+}
+
+
+/* NEW WORKFLOW
+   ========================================================================== */
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.workflow-step-card {
+  min-width: 0;
+  padding: 18px 14px;
+  background: #e8f1f1;
+  border-radius: 12px;
+}
+
+.workflow-step-card > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 28px;
+  margin-bottom: 10px;
+  background: #20b6aa;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.workflow-step-card h3 {
+  margin: 0 0 7px;
+  color: #075765;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.workflow-step-card p {
+  margin: 0;
+  color: #263844;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* RESULTS
+   ========================================================================== */
+
+.results-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.result-card {
+  padding: 20px;
+  background: #f4f8f8;
+  border: 1px solid #d9e2e5;
+  border-radius: 14px;
+}
+
+.result-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 28px;
+  margin-bottom: 10px;
+  padding: 0 8px;
+  background: #075765;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.result-card h3 {
+  margin: 0 0 8px;
+  color: #071a26;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.result-card p {
+  margin: 0;
+  color: #263844;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* CTA
+   ========================================================================== */
+
+.case-cta {
+  width: 100%;
+  padding: 28px 22px;
+  background: rgba(2, 27, 36, 0.45);
+  border: 1px solid #20b6aa;
+  border-radius: 16px;
+}
+
+.case-cta-eyebrow {
+  margin: 0 0 8px;
+  color: #20b6aa;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.case-cta h2 {
+  margin: 0 0 14px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.case-cta p {
+  margin: 0;
+  color: #d5e0e3;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.case-cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50px;
+  margin-top: 22px;
+  padding: 12px 18px;
+  background: #148d8b;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  transition: 0.2s ease;
+}
+
+.case-cta-btn:hover {
+  background: #20b6aa;
+}
